@@ -68,7 +68,8 @@ emailInpet.addEventListener("input", function () {
   }
 });
 passwordInpet.addEventListener("input", function () {
-  //let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  let regex =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   let name = passwordInpet.value;
   if (regex.test(name)) {
     passwordInpet.classList.add("is-valid");
